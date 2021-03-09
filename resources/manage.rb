@@ -30,7 +30,7 @@ property :manage_nfs_home_dirs, [true, false], default: true
 
 action :create do
   users_groups = {}
-  users_groups[new_reusers_hash.group_name] = []
+  users_groups[new_resource.users_hash.group_name] = []
 
   # Loop through all the users in the users_hash
   # Break the loop if users is no in the specified group_name
